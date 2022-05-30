@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="글씨 크기 조정"
+            android:textSize="15dp">
+        </TextView>
+        <Button
+            android:id="@+id/btntext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="크게">
+        </Button>
+        <Button
+            android:id="@+id/btntext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="원래대로">
+        </Button>
+        <Button
+            android:id="@+id/btntext3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="작게">
+        </Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <Switch
+            android:id="@+id/Sw1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일반 건강검진 대상자">
+        </Switch>
+
+        <ScrollView
+            android:id="@+id/sc1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aa"
+                android:layout_margin="10dp"
+                android:background="#f0f0f0"
+                android:visibility="gone">
+            </TextView>
+        </ScrollView>
+
+
+        <Switch
+            android:id="@+id/Sw2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="건강검진 비용">
+        </Switch>
+
+        <ScrollView
+            android:id="@+id/sc2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bb"
+                android:layout_margin="10dp"
+                android:background="#f0f0f0"
+                android:visibility="gone">
+            </TextView>
+        </ScrollView>
+
+        <Switch
+            android:id="@+id/Sw3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일반건강검진 항목(1차)">
+        </Switch>
+
+        <ScrollView
+            android:id="@+id/sc3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cc"
+                android:layout_margin="10dp"
+                android:background="#f0f0f0"
+                android:visibility="gone">
+            </TextView>
+        </ScrollView>
+
+
+        <Switch
+            android:id="@+id/Sw4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일반건강검진 항목(2차)">
+        </Switch>
+
+        <ScrollView
+            android:id="@+id/sc4"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dd"
+                android:layout_margin="10dp"
+                android:background="#f0f0f0"
+                android:visibility="gone">
+            </TextView>
+        </ScrollView>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="메인화면으로 돌아가기">
+        </Button>
+
+
+
+</LinearLayout>

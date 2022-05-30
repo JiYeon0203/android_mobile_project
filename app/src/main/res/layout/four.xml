@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TabWidget>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="개인정보의 제공에 관한 동의"
+                    android:textSize="20dp">
+                </TextView>
+                <ScrollView
+                    android:id="@+id/sc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="#f0f0ff"
+                            android:text="@string/a">
+                        </TextView>
+                        <RadioGroup
+                            android:id="@+id/rg1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:id="@+id/rb1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="48dp"
+                                android:text="동의합니다.">
+                            </RadioButton>
+                            <RadioButton
+                                android:id="@+id/rb2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="48dp"
+                                android:text="동의하지 않습니다.">
+                            </RadioButton>
+                        </RadioGroup>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="민감정보의 처리에 관한 동의"
+                            android:textSize="20dp"
+                            android:layout_marginTop="20dp">
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="#f0f0ff"
+                            android:text="@string/b">
+                        </TextView>
+                        <RadioGroup
+                            android:id="@+id/rg2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:id="@+id/rb3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="48dp"
+                                android:text="동의합니다.">
+                            </RadioButton>
+                            <RadioButton
+                                android:id="@+id/rb4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="48dp"
+                                android:text="동의하지 않습니다.">
+                            </RadioButton>
+                        </RadioGroup>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="고유식별정보의 처리에 관한 동의"
+                            android:textSize="20dp"
+                            android:layout_marginTop="20dp">
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="#f0f0ff"
+                            android:text="@string/c">
+                        </TextView>
+                        <RadioGroup
+                            android:id="@+id/rg3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:id="@+id/rb5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="48dp"
+                                android:text="동의합니다.">
+                            </RadioButton>
+                            <RadioButton
+                                android:id="@+id/rb6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="48dp"
+                                android:text="동의하지 않습니다.">
+                            </RadioButton>
+                        </RadioGroup>
+
+                        <Button
+                            android:id="@+id/btn1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="확인하였습니다">
+                        </Button>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="병원 예약"
+                        android:textSize="15sp">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RadioGroup
+                            android:id="@+id/rgh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:id="@+id/rbh1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="동작구 보건소">
+                            </RadioButton>
+                            <RadioButton
+                                android:id="@+id/rbh2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="에코이비인후과의원">
+                            </RadioButton>
+                            <RadioButton
+                                android:id="@+id/rbh3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="삼성드림내과의원">
+                            </RadioButton>
+                            <RadioButton
+                                android:id="@+id/rbh4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="동작경희병원">
+                            </RadioButton>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="날짜 예약"
+                        android:textSize="15sp">
+                    </TextView>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <CalendarView
+                            android:id="@+id/calendarView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:showWeekNumber="false">
+                        </CalendarView>
+                    </FrameLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+                        <RadioGroup
+                            android:id="@+id/Rg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1">
+                            <RadioButton
+                                android:id="@+id/rd1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1차 건강검진"
+                                android:textSize="20sp">
+                            </RadioButton>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="처음 건강검진을 받는 사람들만 체크해주세요."
+                                android:textSize="10sp">
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="* 만 66세 치매 선별검사는 생애전환기 건강진단 2차 검진에 해당합니다."
+                                android:textSize="10sp"
+                                android:textColor="#ff0000">
+                            </TextView>
+                            <RadioButton
+                                android:id="@+id/rd2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2차 건강검진"
+                                android:textSize="20sp">
+                            </RadioButton>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1차 검진 결과 질환의심자 및 고위험군 환자로 판단되는 사람만 체크해주세요."
+                                android:textSize="10sp">
+                            </TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="* 인지기능장애, KDSQ-C 선별검사의 만 66세 치매선별검사는 생애전환기 건강진단 해당합니다."
+                                android:textSize="10sp"
+                                android:textColor="#ff0000">
+                            </TextView>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <ScrollView
+                        android:id="@+id/sc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#CCCCCC"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:layout_alignParentBottom="true">
+
+                            <Button
+                                android:id="@+id/btnEnd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="예약 완료">
+                            </Button>
+
+                            <TextView
+                                android:id="@+id/tvYear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0000">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="년">
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/tvMonth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="월">
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/tvDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="일 ">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/tvh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="000000000 ">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" ">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/tv12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00 0000">
+                            </TextView>
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="돌아가기">
+                    </Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</TabHost>
