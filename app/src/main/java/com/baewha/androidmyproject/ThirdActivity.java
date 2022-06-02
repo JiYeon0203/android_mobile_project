@@ -32,7 +32,7 @@ public class ThirdActivity extends AppCompatActivity {
         super.onOptionsItemSelected(item);
         switch (item.getItemId()){
             case R.id.item1:
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), FirstActivity.class);
                 startActivity(intent);
                 return true;
             case R.id.item2:
