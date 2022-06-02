@@ -15,7 +15,7 @@ public class FirstActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.first);
         setTitle("건강검진 예약 어플");
 
         btn1 = findViewById(R.id.btn1);
