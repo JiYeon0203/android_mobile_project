@@ -35,10 +35,12 @@
         <uses-library android:name="org.apache.htp.legacy"
             android:required="false"/>
 
+        <activity android:name=".FirstActivity" android:label="첫번째 화면"/>
         <activity android:name=".SecondActivity" android:label="두번째 화면"/>
         <activity android:name=".ThirdActivity" android:label = "세번째 화면"/>
         <activity android:name=".FourActivity" android:label="네번째 화면"/>
         <activity android:name=".FiveActivity" android:label="다섯번째 화면"/>
+
     </application>
 
 </manifest>
