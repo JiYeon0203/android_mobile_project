@@ -71,7 +71,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                     }
                 };
-                // 서버로 Volley를 이용해서 요청을 함.
+
                 RegisterRequest registerRequest = new RegisterRequest(userID, userPass, userName, userAge, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(registerRequest);
