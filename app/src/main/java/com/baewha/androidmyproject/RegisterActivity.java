@@ -19,7 +19,7 @@ import org.json.JSONObject;
 public class RegisterActivity extends AppCompatActivity {
 
     private EditText et_id, et_pass, et_name, et_age;
-    private Button btn_register;
+    private Button btn_register, btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,15 @@ public class RegisterActivity extends AppCompatActivity {
         et_name = findViewById(R.id.et_name);
         et_age = findViewById(R.id.et_age);
         btn_register = findViewById(R.id.btn_register);
+        btn = findViewById(R.id.btn);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +59,7 @@ public class RegisterActivity extends AppCompatActivity {
                             boolean success = jsonObject.getBoolean("success");
                             if (success) {
                                 Toast.makeText(getApplicationContext(), "회원 등록에 성공하였습니다.", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                                 startActivity(intent);
                             } else {
                                 Toast.makeText(getApplicationContext(), "회원 등록에 실패하였습니다.", Toast.LENGTH_SHORT).show();
