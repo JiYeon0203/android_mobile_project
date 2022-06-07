@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity{
                     public void onResponse(String response) {
                         try {
 
-                            System.out.println("hongchul" + response);
+                            System.out.println("jiyeon" + response);
                             JSONObject jsonObject = new JSONObject(response);
                             boolean success = jsonObject.getBoolean("success");
                             if (success) {
@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity{
                                 String userPass = jsonObject.getString("userPassword");
 
                                 Toast.makeText(getApplicationContext(),"로그인에 성공하였습니다.",Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 intent.putExtra("userID", userID);
                                 intent.putExtra("userPass", userPass);
                                 startActivity(intent);
