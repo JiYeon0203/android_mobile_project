@@ -43,14 +43,14 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/Edit_ID"
+                    android:id="@+id/et_id"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:text="ID">
                 </EditText>
 
                 <EditText
-                    android:id="@+id/Edit_PW"
+                    android:id="@+id/et_pass"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:text="PW">
