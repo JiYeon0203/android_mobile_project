@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/gkdis/AndroidStudioProjects/androidmyproject/app/src/main/res/layout/activity_login.xml" value="0.15833333333333333" />
         <entry key="..\:/Users/gkdis/AndroidStudioProjects/androidmyproject/app/src/main/res/layout/activity_main.xml" value="0.2259963768115942" />
         <entry key="..\:/Users/gkdis/AndroidStudioProjects/androidmyproject/app/src/main/res/layout/first.xml" value="0.34010416666666665" />
         <entry key="..\:/Users/gkdis/AndroidStudioProjects/androidmyproject/app/src/main/res/layout/five.xml" value="0.33" />
         <entry key="..\:/Users/gkdis/AndroidStudioProjects/androidmyproject/app/src/main/res/layout/four.xml" value="0.2259963768115942" />
+        <entry key="..\:/Users/gkdis/AndroidStudioProjects/androidmyproject/app/src/main/res/layout/intro_activity.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/gkdis/AndroidStudioProjects/androidmyproject/app/src/main/res/layout/second.xml" value="0.2259963768115942" />
         <entry key="..\:/Users/gkdis/AndroidStudioProjects/androidmyproject/app/src/main/res/layout/sign_up.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/gkdis/AndroidStudioProjects/androidmyproject/app/src/main/res/layout/singeritem.xml" value="0.2259963768115942" />

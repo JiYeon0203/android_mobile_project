@@ -24,7 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidmyproject">
         <activity
-            android:name=".MainActivity"
+            android:name=".IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,12 +37,13 @@
         <uses-library android:name="org.apache.htp.legacy"
             android:required="false"/>
 
-        <activity android:name=".FirstActivity" android:label="첫번째 화면"/>
+        <activity android:name=".LoginActivity" android:label="로그인"/>
         <activity android:name=".SecondActivity" android:label="두번째 화면"/>
         <activity android:name=".ThirdActivity" android:label = "세번째 화면"/>
         <activity android:name=".FourActivity" android:label="네번째 화면"/>
         <activity android:name=".FiveActivity" android:label="다섯번째 화면"/>
-        <activity android:name=".SignUpActivity" android:label="로그인 화면"/>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity"/>
 
     </application>
 
