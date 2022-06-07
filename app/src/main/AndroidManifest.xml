@@ -40,6 +40,7 @@
         <activity android:name=".ThirdActivity" android:label = "세번째 화면"/>
         <activity android:name=".FourActivity" android:label="네번째 화면"/>
         <activity android:name=".FiveActivity" android:label="다섯번째 화면"/>
+        <activity android:name=".SignUpActivity" android:label="로그인 화면"/>
 
     </application>
 
