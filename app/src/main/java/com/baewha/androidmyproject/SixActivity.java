@@ -2,6 +2,7 @@ package com.baewha.androidmyproject;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -15,6 +16,8 @@ public class SixActivity extends AppCompatActivity {
    private  FourActivity Four;
    TextView tv1, tv2, tv3, tv4, tv5;
    Button btn;
+   int a, b, c;
+   RadioGroup rg, rgh;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,28 +32,31 @@ public class SixActivity extends AppCompatActivity {
         tv5 = findViewById(R.id.tv12);
 
         Four = (FourActivity)getApplicationContext();
-        int selectYear = Four.selectYear;
-        int selectMonth = Four.selectMonth;
-        int selectDay = Four.selectDay;
+        a = Four.selectYear;
+        b = Four.selectMonth;
+        c = Four.selectDay;
 
-        RadioGroup rg = Four.rg;
-        RadioGroup rgh = Four.rgh;
+        rg = Four.rg;
+        rgh = Four.rgh;
+
 
         Intent intent = getIntent();
+        a = intent.getIntExtra("년", 0);
+        b = intent.getIntExtra("월", 0);
+        c = intent.getIntExtra("일", 0);
+
+        tv1.setText(Integer.toString(a));
+        tv2.setText(Integer.toString(b));
+        tv3.setText(Integer.toString(c));
 
 
-        tv1.setText(Integer.toString(selectYear));
-        tv2.setText(Integer.toString(selectMonth));
-        tv3.setText(Integer.toString(selectDay));
-
-
-        int id = rg.getCheckedRadioButtonId();
-        RadioButton rb = (RadioButton) findViewById(id);
-        tv5.setText(rb.getText().toString());
-
-        int id2 = rgh.getCheckedRadioButtonId();
-        RadioButton rb2 = (RadioButton) findViewById(id2);
-        tv4.setText(rb2.getText().toString());
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent a = new Intent(getApplicationContext(), FourActivity.class);
+                startActivity(a);
+            }
+        });
 
 
 

@@ -121,6 +121,14 @@ public class FourActivity extends TabActivity {
                 intent.putExtra("월", selectMonth);
                 intent.putExtra("일", selectDay);
 
+                int id = rg.getCheckedRadioButtonId();
+                RadioButton rb = (RadioButton) findViewById(id);
+                tvh.setText(rb.getText().toString());
+
+                int id2 = rgh.getCheckedRadioButtonId();
+                RadioButton rb2 = (RadioButton) findViewById(id2);
+                tv12.setText(rb2.getText().toString());
+
                 Toast.makeText(getApplicationContext(), "예약되었습니다.", Toast.LENGTH_SHORT).show();
 
                 Intent intent1 = new Intent(getApplicationContext(), SixActivity.class);
