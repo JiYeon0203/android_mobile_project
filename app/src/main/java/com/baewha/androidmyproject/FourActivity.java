@@ -24,10 +24,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class FourActivity extends TabActivity {
 
 
-    Button btn, btn2, btnend;
-    RadioGroup rg1, rg2, rg3, rg, rgh;
+    public Button btn, btn2, btnend;
+    public RadioGroup rg1, rg2, rg3, rg, rgh;
     RadioButton rb1, rb2, rb3, rb4, rb5, rb6, rd1, rd2, rbh1, rbh2, rbh3, rbh4;
-    TextView tvyear, tvmonth, tvday, tv12, tvh;
+    public TextView tvyear, tvmonth, tvday, tv12, tvh;
     CalendarView cv1;
     int selectYear, selectMonth, selectDay;
 
@@ -116,20 +116,15 @@ public class FourActivity extends TabActivity {
         btnend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tvyear.setText(Integer.toString(selectYear));
-                tvmonth.setText(Integer.toString(selectMonth));
-                tvday.setText(Integer.toString(selectDay));
-
-                int id = rg.getCheckedRadioButtonId();
-                RadioButton rb = (RadioButton) findViewById(id);
-                tv12.setText(rb.getText().toString());
-
-                int id2 = rgh.getCheckedRadioButtonId();
-                RadioButton rb2 = (RadioButton) findViewById(id2);
-                tvh.setText(rb2.getText().toString());
+                Intent intent = new Intent(FourActivity.this, SixActivity.class);
+                intent.putExtra("년", selectYear);
+                intent.putExtra("월", selectMonth);
+                intent.putExtra("일", selectDay);
 
                 Toast.makeText(getApplicationContext(), "예약되었습니다.", Toast.LENGTH_SHORT).show();
 
+                Intent intent1 = new Intent(getApplicationContext(), SixActivity.class);
+                startActivity(intent1);
             }
 
 
