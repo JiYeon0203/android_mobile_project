@@ -1,5 +1,6 @@
 package com.baewha.androidmyproject;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.TabActivity;
 import android.content.DialogInterface;
@@ -21,6 +22,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class FourActivity extends TabActivity {
 
 
@@ -29,7 +32,8 @@ public class FourActivity extends TabActivity {
     RadioButton rb1, rb2, rb3, rb4, rb5, rb6, rd1, rd2, rbh1, rbh2, rbh3, rbh4;
     public TextView tvyear, tvmonth, tvday, tv12, tvh;
     CalendarView cv1;
-    int selectYear, selectMonth, selectDay;
+    public int selectYear, selectMonth, selectDay;
+    public String a, b, c;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -116,10 +120,9 @@ public class FourActivity extends TabActivity {
         btnend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FourActivity.this, SixActivity.class);
-                intent.putExtra("년", selectYear);
-                intent.putExtra("월", selectMonth);
-                intent.putExtra("일", selectDay);
+                tvyear.setText(Integer.toString(selectYear));
+                tvmonth.setText(Integer.toString(selectMonth));
+                tvday.setText(Integer.toString(selectDay));
 
                 int id = rg.getCheckedRadioButtonId();
                 RadioButton rb = (RadioButton) findViewById(id);
@@ -133,6 +136,16 @@ public class FourActivity extends TabActivity {
 
                 Intent intent1 = new Intent(getApplicationContext(), SixActivity.class);
                 startActivity(intent1);
+
+                //                Intent intent2 = new Intent();
+//
+//                intent2.putExtra("년", tvyear.getText().toString());
+//                intent2.putExtra("월", tvmonth.getText().toString());
+//                intent2.putExtra("일", tvday.getText().toString());
+//                setResult(Activity.RESULT_OK, intent2);
+
+//                intent2.putExtra("병원", tvh.getText().toString());
+//                intent2.putExtra("몇차", tv12.getText().toString());
             }
 
 
@@ -145,6 +158,10 @@ public class FourActivity extends TabActivity {
                 selectMonth = i1 + 1;
                 selectDay = i2;
 
+//                Intent intent = new Intent(FourActivity.this, SixActivity.class);
+//                intent.putExtra("년", selectYear);
+//                intent.putExtra("월", selectMonth);
+//                intent.putExtra("일", selectDay);
             }
         });
 
