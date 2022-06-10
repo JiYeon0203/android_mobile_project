@@ -356,6 +356,12 @@
                                 android:layout_height="wrap_content"
                                 android:text="00 0000">
                             </TextView>
+                            <Button
+                                android:id="@+id/btna"
+                                android:text="확인"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                            </Button>
                         </LinearLayout>
                     </ScrollView>
 

@@ -33,47 +33,51 @@ public class SixActivity extends AppCompatActivity {
         tv4 = findViewById(R.id.h);
         tv5 = findViewById(R.id.h12);
 
-        LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.four, null);
-        TextView tvyear = (TextView)view.findViewById(R.id.tvYear);
-        TextView tvmonth = (TextView)view.findViewById(R.id.tvMonth);
-        TextView tvday = (TextView)view.findViewById(R.id.tvDay);
-        TextView tvh = (TextView)view.findViewById(R.id.tvh);
-        TextView tv12 = (TextView)view.findViewById(R.id.tv12);
-
-        tv1.setText(tvyear.getText().toString());
-        tv2.setText(tvmonth.getText().toString());
-        tv3.setText(tvday.getText().toString());
-        tv4.setText(tvh.getText().toString());
-        tv5.setText(tv12.getText().toString());
 
 
-
-
-//        Four = (FourActivity)getApplicationContext();
-//        a = Four.selectYear;
-//        b = Four.selectMonth;
-//        c = Four.selectDay;
-
-//        rg = Four.rg;
-//        rgh = Four.rgh;
+//        LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+//        View view = inflater.inflate(R.layout.four, null);
 //
-//        Intent intent = new Intent(SixActivity.this, FourActivity.class);
-//        startActivityForResult(intent, 1);
-
-
-
-
-
-
-//        Intent intent = getIntent();
-//        a = intent.getIntExtra("년", 0);
-//        b = intent.getIntExtra("월", 0);
-//        c = intent.getIntExtra("일", 0);
+//        TextView tvyear = (TextView)view.findViewById(R.id.tvYear);
+//        TextView tvmonth = (TextView)view.findViewById(R.id.tvMonth);
+//        TextView tvday = (TextView)view.findViewById(R.id.tvDay);
+//        TextView tvh = (TextView)view.findViewById(R.id.tvh);
+//        TextView tv12 = (TextView)view.findViewById(R.id.tv12);
 //
-//        tv1.setText(Integer.toString(a));
-//        tv2.setText(Integer.toString(b));
-//        tv3.setText(Integer.toString(c));
+//        tv1.setText(tvyear.getText().toString());
+//        tv2.setText(tvmonth.getText().toString());
+//        tv3.setText(tvday.getText().toString());
+//        tv4.setText(tvh.getText().toString());
+//        tv5.setText(tv12.getText().toString());
+
+
+
+
+
+        Four = (FourActivity)getApplicationContext();
+        a = Four.selectYear;
+        b = Four.selectMonth;
+        c = Four.selectDay;
+
+        rg = Four.rg;
+        rgh = Four.rgh;
+
+        Intent intent = new Intent(SixActivity.this, FourActivity.class);
+        startActivityForResult(intent, 1);
+
+
+
+
+
+
+        Intent intent1 = getIntent();
+        a = intent1.getIntExtra("년", 0);
+        b = intent1.getIntExtra("월", 0);
+        c = intent1.getIntExtra("일", 0);
+
+        tv1.setText(Integer.toString(a));
+        tv2.setText(Integer.toString(b));
+        tv3.setText(Integer.toString(c));
 
 
         btn.setOnClickListener(new View.OnClickListener() {

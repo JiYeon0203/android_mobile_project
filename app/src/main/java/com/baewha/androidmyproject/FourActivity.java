@@ -27,7 +27,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class FourActivity extends TabActivity {
 
 
-    public Button btn, btn2, btnend;
+    public Button btn, btn2, btnend, btna;
     public RadioGroup rg1, rg2, rg3, rg, rgh;
     RadioButton rb1, rb2, rb3, rb4, rb5, rb6, rd1, rd2, rbh1, rbh2, rbh3, rbh4;
     public TextView tvyear, tvmonth, tvday, tv12, tvh;
@@ -50,6 +50,7 @@ public class FourActivity extends TabActivity {
 
         btn = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
+        btna = findViewById(R.id.btna);
         rb1 = findViewById(R.id.rb1);
         rb2 = findViewById(R.id.rb2);
         rb3 = findViewById(R.id.rb3);
@@ -117,6 +118,7 @@ public class FourActivity extends TabActivity {
 
 
 
+
         btnend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -134,21 +136,27 @@ public class FourActivity extends TabActivity {
 
                 Toast.makeText(getApplicationContext(), "예약되었습니다.", Toast.LENGTH_SHORT).show();
 
-                Intent intent1 = new Intent(getApplicationContext(), SixActivity.class);
-                startActivity(intent1);
 
-                //                Intent intent2 = new Intent();
-//
-//                intent2.putExtra("년", tvyear.getText().toString());
-//                intent2.putExtra("월", tvmonth.getText().toString());
-//                intent2.putExtra("일", tvday.getText().toString());
-//                setResult(Activity.RESULT_OK, intent2);
+                Intent intent2 = new Intent();
 
-//                intent2.putExtra("병원", tvh.getText().toString());
-//                intent2.putExtra("몇차", tv12.getText().toString());
+                intent2.putExtra("년", tvyear.getText().toString());
+                intent2.putExtra("월", tvmonth.getText().toString());
+                intent2.putExtra("일", tvday.getText().toString());
+                setResult(Activity.RESULT_OK, intent2);
+
+                intent2.putExtra("병원", tvh.getText().toString());
+                intent2.putExtra("몇차", tv12.getText().toString());
             }
 
 
+        });
+
+        btna.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(getApplicationContext(), SixActivity.class);
+                startActivity(intent1);
+            }
         });
 
         cv1.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
